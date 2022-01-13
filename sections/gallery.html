@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/styles.css">
-    <link rel="stylesheet" href="../Styles/gallery.css">
-    <script src="../Scripts/scripts.js"></script>
-    <link rel="icon" href="../Images/icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    
-    <title>Galeria</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-----------SEO------------>
+  <meta name="description"
+  content="En nuestra galeria encontraras todas las imagenes acerca de nosotrs y nuestras comidas!">
+  <meta name="theme-color" content="#3e456c">
+  <meta name="keywords"
+    content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, ">
+  <!----------------------->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+  <script src="../Scripts/scripts.js"></script>
+  <link rel="icon" href="../Images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+  <title>Nueva Adelina - Galeria</title>
 </head>
+
 <body>
-    <header>
-        <a href="../index.html" class="logo text-light animate__animated animate__zoomIn animate__delay-0.7s">La Nueva Adelina<span>.</span></a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank">Menu</a></li>
-            <li><a href="../sections/contact.html" target="_blank">Contacto</a></li>
-        </ul>    
-    </header>
-    <section class="galleryBanner" id="banner">
-        <div class="content">
-            <h2>Nuestra Galería</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a dolorem possimus reprehenderit doloremque provident nulla, vero blanditiis quae veniam optio nihil quasi vel magni tempora vitae, quo eius omnis!</P>
-        </div>
-    </section>
-    <div id="carouselExampleIndicators" class="carousel slide w-75 m-5 mx-auto" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Images/grid1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/grid3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/grid6.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <header>
+    <a href="../index.html" class="logo text-light animate__animated animate__zoomIn animate__delay-0.7s">La Nueva
+      Adelina<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank">Menu</a></li>
+      <li><a href="../sections/contact.html" target="_blank">Contacto</a></li>
+    </ul>
+  </header>
+  <section class="galleryBanner" id="banner">
+    <div class="content">
+      <h2>Nuestra Galería</h2>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a dolorem possimus reprehenderit doloremque
+        provident nulla, vero blanditiis quae veniam optio nihil quasi vel magni tempora vitae, quo eius omnis!</P>
+    </div>
+  </section>
+  <div id="carouselExampleIndicators" class="carousel slide w-75 m-5 mx-auto" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Images/grid1.jpg" class="d-block w-100" alt="...">
       </div>
-      
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <div class="carousel-item">
+        <img src="../Images/grid3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Images/grid6.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </body>
+
 </html>

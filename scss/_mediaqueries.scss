@@ -1,0 +1,129 @@
+@media (max-width: 991px) {
+  header {
+    .navigation {
+      display: none;
+      li {
+        list-style: none;
+        margin-left: 0;
+        a {
+          color: $black;
+          font-size: 1.6em;
+        }
+      }
+    }
+    .navigation.active {
+      width: 100%;
+      height: calc(100% - 68px);
+      position: fixed;
+      top: 68px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: $white;
+    }
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../Images/hamburgesa.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active {
+    background: url(../Images/cerrar.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header.sticky {
+    padding: 10px 20px;
+    .menuToggle {
+      filter: invert(1);
+    }
+  }
+  section {
+    padding: 20px;
+  }
+  .banner {
+    .content {
+      h1 {
+        font-size: 5em;
+        color: $white;
+      }
+    }
+  }
+  .row {
+    flex-direction: column;
+    .col50 {
+      position: relative;
+      width: 100%;
+    }
+    .col {
+      .imgbx {
+        height: 300px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .menu {
+    .content {
+      margin-top: 20px;
+      .box {
+        margin: 10px;
+        .imgbx {
+          height: 260px;
+        }
+      }
+    }
+  }
+  .tittle {
+    text-align: center;
+  }
+  .tittletext {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    .content {
+      h1 {
+        font-size: 2.2em;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 15px;
+  }
+  .card-1 {
+    @extend .card;
+  }
+  .card-2 {
+    @extend .card;
+  }
+  .card-3 {
+    @extend .card;
+  }
+}
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,45 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../Images/parrillada-fondo.png);
+  background-size: center/cover;
+  background-repeat: no-repeat;
+  .content {
+    max-width: 900px;
+    text-align: center;
+    h1 {
+      font-size: 5em;
+      color: $white;
+    }
+    p {
+      font-size: 1.3em;
+      font-weight: 400;
+      color: $white;
+      span {
+        color: $span;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: 1em;
+  color: $black;
+  background-color: $btnbg;
+  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.btn:hover {
+  letter-spacing: 6px;
+}

@@ -1,0 +1,7 @@
+Hola Roger, todo bien?
+
+Para esta entrega aplique SASS a casi todo mi proyecto, faltan unos retoques finales nada mas. Aplique tambien mixin y extend como pedia la entrega, ademas de nesting obviamente.
+Optimice todas las imagenes con Kraken.io (pagina recomendada en clase), tambien agregue meta description y keywords a todos mis documentos HTML. 
+Redacte textos faciles de leer (como mi pagina todavia no esta terminada tengo algunos lorem, pero ya para la siguiente entrega los voy a sacar obviamente), y ademas cree titulos breves y descriptivos.
+
+Cualquier recomendacion o correccion la hablamos por slack! Muchas gracias por tu tiempo :)
