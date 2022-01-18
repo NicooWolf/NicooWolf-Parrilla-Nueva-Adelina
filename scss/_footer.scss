@@ -1,0 +1,96 @@
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $black;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: $white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    span {
+      color: $span;
+    }
+  }
+  p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  li {
+    margin: 0 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+    i {
+      font-size: 1.1rem;
+      transition: color 0.4s ease;
+    }
+  }
+}
+
+.hola {
+  transform: scale(1.5);
+  transition: 0.8s;
+  color: transparent;
+}
+
+.fa-facebook:hover {
+  background: #3b5998;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  @extend .hola;
+}
+.fa-instagram:hover {
+  background: linear-gradient(
+    #4f5bd5,
+    #962fbf,
+    #feda75,
+    #d62976,
+    #fa7e1e,
+    #feda75
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  @extend .hola;
+}
+.fa-whatsapp:hover {
+  background: #25d366;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  @extend .hola;
+}
+.fa-arrow-circle-up:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(250, 217, 97) 0%,
+    rgb(247, 107, 28) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  @extend .hola;
+}
