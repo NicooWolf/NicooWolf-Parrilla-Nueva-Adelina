@@ -12,6 +12,7 @@
     <meta name="keywords"
         content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, ">
     <!----------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./Images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -26,10 +27,10 @@
         <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
             <li><a href="#about" onclick="toggleMenu();">Sobre Nosotros</a></li>
             <li><a href="#especialidades" onclick="toggleMenu();">Recomendaciones</a></li>
-            <li><a href="./sections/gallery.html" target="_blank" onclick="toggleMenu();">Galeria</a></li>
+            <li><a href="./sections/gallery.html" onclick="toggleMenu();">Galeria</a></li>
             <li><a href="./sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank" onclick="toggleMenu();">Menu</a>
             </li>
-            <li><a href="./sections/contact.html" target="_blank" onclick="toggleMenu();">Contacto</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
         </ul>
     </header>
     <section class="banner" id="banner">
@@ -39,22 +40,49 @@
             <a href="./sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank" class="btn">Nuestro Menu</a>
         </div>
     </section>
-    <section class="about" id="about">
+    <section id="about">
         <div class="row">
-            <div class="col50">
+            <div class="aboutUs">
                 <h2 class="titleText"><span>S</span>obre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi hic sint nisi, ipsam, veritatis
-                    iure tenetur consectetur magnam dolorem, nihil ea amet eum consequatur quos laudantium veniam
-                    consequuntur dolore quam!
-                    Nostrum fugit harum officiis. Ullam delectus tenetur, officiis laboriosam corporis dolorum blan</p>
-            </div>
-            <div class="col50">
-                <div class="imgbx">
-                    <img src="./Images/grid4.jpg" alt="">
-                </div>
+                <p>Con mas de 6 años en el mercado gastronómico, contamos con carnes de la mejor calidad. Asi también,
+                    con los mejores productos para elaborar todas nuestras comidas.
+                </p>
             </div>
         </div>
     </section>
+    <div class="body__page">
+        <div class="container__card">
+            <div class="tarjeta c1">
+                <div class="icono">
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="info__description">
+                    <p>Contamos con la mejor calidad de productos! Para que nuestros clientes disfruten de comidas
+                        premium.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+            <div class="tarjeta c2">
+                <div class="icono">
+                    <i class="fa fa-credit-card"></i>
+                </div>
+                <div class="info__description">
+                    <p>Aceptamos todo tipo de tarjetas de credito / debito como medio de pago.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+
+            <div class="tarjeta c3">
+                <div class="icono">
+                    <i class="fa fa-bitcoin"></i>
+                </div>
+                <div class="info__description">
+                    <p>También aceptamos cryptomonedas como medio de pago!.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="title" id="especialidades">
         <h2>Nuestras <span>E</span>specialidades</h2>
     </div>
@@ -90,13 +118,68 @@
             </div>
         </div>
     </div>
-    <footer>
+    <div class="contact__content" id="contact">
 
-    </footer>
+        <h1 class="contact__logo">Contactanos!</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="Nombre Completo">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número telefonico</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas información</h4>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Av de Mayo 1158</li>
+                    <li><i class="fa fa-phone"></i> +54 011-3290-7617</li>
+                    <li><i class="fa fa-envelope"></i> lanuevaadelina@hotmail.com</li>
+                </ul>
+                <p>Ante cualquier duda / inconveniente, no lo pienses dos veces y contactanos!</p>
+                <p>Lanuevaadelina.com</p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3 class="logo animate__animated animate__zoomIn animate__delay-0.7s"">La Nueva Adelina<span>.</span></h3>
+            <ul class=" socials">
+                    <li><a href="https://www.facebook.com/parrillalanuevaadelina" target="_blank"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/parrillalanuevaadelina/" target="_blank"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
+                    </ul>
+                    <p>Copyright &copy;2022.</p>
+            </div>
+        </footer>
 
 
-
-    <script src="./Scripts/scripts.js"></script>
+        <script src="./Scripts/scripts.js"></script>
 </body>
 
 </html>
