@@ -5,25 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-----------SEO------------>
+
   <meta name="description"
-    content="En nuestra galeria encontraras todas las imagenes acerca de nosotrs y nuestras comidas!">
+    content="En nuestra galería encontraras todas las imagenes acerca de nosotrs y nuestras comidas!">
   <meta name="theme-color" content="#3e456c">
   <meta name="keywords"
     content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, ">
-  <!----------------------->
-  <link rel="stylesheet" href="../css/styles.css">
-  <script src="../Scripts/scripts.js"></script>
-  <link rel="icon" href="../Images/icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrap CSS -->
+  <!---------BOOTSTRAP----------->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-  <title>Nueva Adelina - Galeria</title>
+  <!---------CSS----------->
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!---------ANIMATED----------->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!---------ICON----------->
+
+  <link rel="icon" href="../Images/icon.png">
+
+  <!---------TITLE----------->
+
+  <title>Nueva Adelina - Galería</title>
 </head>
 
 <body>
@@ -31,17 +43,27 @@
     <a href="../index.html" class="logo text-light animate__animated animate__zoomIn animate__delay-0.7s">La Nueva
       Adelina<span>.</span></a>
     <div class="menuToggle" onclick="toggleMenu();"></div>
-    <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../pages/Menú Parrilla la Nueva Adelina.pdf" target="_blank">Menu</a></li>
-    </ul>
+
+    <!---------NAVIGATION----------->
+    <nav>
+      <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/Menú Parrilla la Nueva Adelina.pdf" target="_blank">Menú</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <!---------BANNER----------->
+
   <section class="galleryBanner" id="banner">
     <div class="content">
       <h2>Nuestra Galería</h2>
       <P>Hechale un vistaso a nuestros sabrosos platos!</P>
     </div>
   </section>
+
+  <!---------CAROUSEL----------->
+
   <div id="carouselExampleIndicators" class="carousel slide w-100 m-5 mx-auto" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -83,6 +105,9 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!---------FOOTER----------->
+
   <footer>
     <div class="footer-content">
       <h3 class="logo animate__animated animate__zoomIn animate__delay-0.7s"">La Nueva Adelina<span>.</span></h3>
@@ -91,18 +116,25 @@
         </li>
         <li><a href="https://www.instagram.com/parrillalanuevaadelina/" target="_blank"><i
               class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
         <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
         </ul>
         <p>Copyright &copy;2022.</p>
     </div>
   </footer>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+  <!---------SCRIPTS----------->
+
+  <script src="../Scripts/scripts.js"></script>
+
+  <!-------BOOTSTRAP BUNDLE WITH POPPER------->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 </body>
 
 </html>

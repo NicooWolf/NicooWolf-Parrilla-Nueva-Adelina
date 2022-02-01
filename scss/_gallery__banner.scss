@@ -1,23 +1,25 @@
+/* GALLERY SECTION BANNER */
+
 .galleryBanner {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/galeria.jpg);
-    background-size: center/cover;
-    background-repeat: no-repeat;
-    .content {
-        max-width: 900px;
-        text-align: center;
-        h2 {
-            font-size: 5em;
-            color: $white;
-          }
-          p {
-            font-size: 1em;
-            color: $white;
-          }
-      }
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../Images/galeria.jpg);
+  background-size: center/cover;
+  background-repeat: no-repeat;
+  .content {
+    max-width: 56.25rem;
+    text-align: center;
+    h2 {
+      font-size: 5em;
+      color: $white;
+    }
+    p {
+      font-size: 1em;
+      color: $white;
+    }
   }
+}

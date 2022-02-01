@@ -1,3 +1,5 @@
+/* FOOTER */
+
 footer {
   bottom: 0;
   left: 0;
@@ -8,7 +10,7 @@ footer {
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
-  padding-top: 40px;
+  padding-top: 2.5rem;
   color: $white;
 }
 
@@ -28,12 +30,15 @@ footer {
     }
   }
   p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
+    max-width: 31.25rem;
+    margin: 0.625rem auto;
+    line-height: 1.75rem;
+    font-size: 0.875rem;
   }
 }
+
+/* SOCIAL ICONS */
+
 .socials {
   list-style: none;
   display: flex;
@@ -41,7 +46,7 @@ footer {
   justify-content: center;
   margin: 1rem 0 3rem 0;
   li {
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
   a {
     text-decoration: none;
@@ -53,7 +58,7 @@ footer {
   }
 }
 
-.hola {
+.transform {
   transform: scale(1.5);
   transition: 0.8s;
   color: transparent;
@@ -63,7 +68,7 @@ footer {
   background: #3b5998;
   background-clip: border-box;
   -webkit-background-clip: text;
-  @extend .hola;
+  @extend .transform;
 }
 .fa-instagram:hover {
   background: linear-gradient(
@@ -76,13 +81,13 @@ footer {
   );
   background-clip: border-box;
   -webkit-background-clip: text;
-  @extend .hola;
+  @extend .transform;
 }
 .fa-whatsapp:hover {
   background: #25d366;
   background-clip: border-box;
   -webkit-background-clip: text;
-  @extend .hola;
+  @extend .transform;
 }
 .fa-arrow-circle-up:hover {
   background: linear-gradient(
@@ -92,5 +97,5 @@ footer {
   );
   background-clip: border-box;
   -webkit-background-clip: text;
-  @extend .hola;
+  @extend .transform;
 }

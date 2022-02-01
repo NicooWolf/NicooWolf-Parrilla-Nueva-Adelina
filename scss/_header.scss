@@ -1,9 +1,11 @@
+/* HEADER */
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 2.5rem 6.25rem;
   z-index: 10000;
   display: flex;
   justify-content: space-between;
@@ -14,52 +16,53 @@ header {
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
-
+    &:hover {
+      letter-spacing: 0.188rem;
+      transition: 0.5s;
+    }
     span {
       color: $span;
     }
   }
-  .logo:hover {
-    letter-spacing: 3px;
-    transition: 0.5s;
-  }
+
+  /* NAVIGATION MENU */
+
   .navigation {
     position: relative;
     display: flex;
     li {
       list-style: none;
-      margin-left: 30px;
+      margin-left: 1.875rem;
       a {
         text-decoration: none;
         color: $white;
         font-weight: 300;
-      }
-      a:hover {
-        color: $span;
-        border-bottom: 2px solid $ahover;
+        &:hover {
+          color: $span;
+          border-bottom: 2px solid $ahover;
+        }
       }
     }
   }
-}
-header.sticky {
-  background: $white;
-  padding: 10px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  .navigation {
-    li {
-      a {
-        color: $black;
+  &.sticky {
+    background: $white;
+    padding: 0.625rem 6.25rem;
+    box-shadow: 0 0.313rem 1.25rem rgba(0, 0, 0, 0.05);
+    .navigation {
+      li {
+        a {
+          color: $black;
+        }
+        a:hover {
+          color: $stickylogospan;
+        }
       }
-      a:hover {
+    }
+    .logo {
+      color: $black !important;
+      span {
         color: $stickylogospan;
       }
     }
   }
-  .logo {
-    color: $black !important;
-    span {
-      color: $stickylogospan;
-    }
-  }
 }
-

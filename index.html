@@ -5,20 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-----------SEO------------>
+
     <meta name="description"
         content="Come en la mejor parrilla / restaurante de la zona. Las mejores parrilladas y papas fritas las tenemos nosotros! Ubicada en Villa Adelina">
     <meta name="theme-color" content="#3e456c">
     <meta name="keywords"
         content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, ">
+
     <!--------BOOTSTRAP----------->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!---------CSS----------->
+
+    <!---------CSS----------->
+
     <link rel="stylesheet" href="./css/styles.css">
-     <!---------ANIMATED--------->
+
+    <!---------ANIMATED--------->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-     <!---------ICONO----------->
+
+    <!---------ICON----------->
+
     <link rel="icon" href="./Images/icon.png">
+
+    <!---------TITLE----------->
+
     <title>Parrilla la Nueva Adelina</title>
 </head>
 
@@ -27,22 +40,33 @@
         <a href="./index.html" class="logo animate__animated animate__zoomIn animate__delay-0.7s">La Nueva
             Adelina<span>.</span></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
-            <li><a href="#about" onclick="toggleMenu();">Sobre Nosotros</a></li>
-            <li><a href="#especialidades" onclick="toggleMenu();">Recomendaciones</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
-            <li><a href="./pages/" onclick="toggleMenu();">Galeria</a></li>
-            <li><a href="./pages/Menú Parrilla la Nueva Adelina.pdf" target="_blank" onclick="toggleMenu();">Menu</a>
-            </li>
-        </ul>
+
+        <!---------NAVIGATION----------->
+        <nav>
+            <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
+                <li><a href="#about" onclick="toggleMenu();">Sobre Nosotros</a></li>
+                <li><a href="#especialidades" onclick="toggleMenu();">Recomendaciones</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
+                <li><a href="./pages/gallery.html" onclick="toggleMenu();">Galería</a></li>
+                <li><a href="./pages/Menú Parrilla la Nueva Adelina.pdf" target="_blank"
+                        onclick="toggleMenu();">Menú</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <!---------BANNER----------->
+
     <section class="banner" id="banner">
         <div class="content">
             <h1>Parrilla <br> La Nueva Adelina</h1>
-            <P>Veni a probar nuestras <span>exquisitas</span> Parrilladas y excelentes fritas!</P>
-            <a href="./sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank" class="btn">Nuestro Menu</a>
+            <P>Veni a probar nuestras <span>exquisitas</span> parrilladas y excelentes fritas!</P>
+            <a href="./sections/Menú Parrilla la Nueva Adelina.pdf" target="_blank" class="btn">Nuestro Menú</a>
         </div>
     </section>
+
+    <!---------ABOUT US SECTION----------->
+
     <section id="about">
         <div class="row">
             <div class="aboutUs">
@@ -53,6 +77,9 @@
             </div>
         </div>
     </section>
+
+    <!---------CARDS----------->
+
     <div class="body__page">
         <div class="container__card">
             <div class="tarjeta c1">
@@ -80,12 +107,15 @@
                     <i class="fa fa-bitcoin"></i>
                 </div>
                 <div class="info__description">
-                    <p>También aceptamos cryptomonedas como medio de pago!.</p>
+                    <p>También aceptamos cryptomonedas como medio de pago!</p>
                     <input type="button" value="Leer Más">
                 </div>
             </div>
         </div>
     </div>
+
+    <!---------OUR SPECIALITIES CARDS----------->
+
     <div class="title" id="especialidades">
         <h2>Nuestras <span>E</span>specialidades</h2>
     </div>
@@ -119,10 +149,11 @@
             </div>
         </div>
     </div>
+
+    <!---------CONTACT FORM----------->
+
     <div class="contact__content" id="contact">
-
         <h1 class="contact__logo">Contactanos!</h1>
-
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <form action="">
@@ -164,6 +195,9 @@
                 <p>Lanuevaadelina.com</p>
             </div>
         </div>
+
+        <!---------FOOTER----------->
+
         <footer>
             <div class="footer-content">
                 <h3 class="logo animate__animated animate__zoomIn animate__delay-0.7s"">La Nueva Adelina<span>.</span></h3>
@@ -172,13 +206,14 @@
                                 class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/parrillalanuevaadelina/" target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                     <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
                     </ul>
                     <p>Copyright &copy;2022.</p>
             </div>
         </footer>
 
+        <!---------SCRIPTS----------->
 
         <script src="./Scripts/scripts.js"></script>
 </body>

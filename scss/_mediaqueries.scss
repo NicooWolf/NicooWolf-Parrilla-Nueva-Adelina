@@ -1,3 +1,5 @@
+/* MEDIA QUERIES */
+
 @media (max-width: 991px) {
   header {
     .navigation {
@@ -13,9 +15,9 @@
     }
     .navigation.active {
       width: 100%;
-      height: calc(100% - 68px);
+      height: calc(100% - 4rem);
       position: fixed;
-      top: 68px;
+      top: 4.2rem;
       left: 0;
       display: flex;
       justify-content: center;
@@ -23,31 +25,31 @@
       flex-direction: column;
       background: $white;
     }
+    &.sticky {
+      padding: 0.625rem 1.25rem;
+      .menuToggle {
+        filter: invert(1);
+      }
+    }
   }
   .menuToggle {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: url(../Images/hamburgesa.svg);
-    background-size: 30px;
+    background-size: 1.875rem;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-  }
-  .menuToggle.active {
-    background: url(../Images/cerrar.svg);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  header.sticky {
-    padding: 10px 20px;
-    .menuToggle {
-      filter: invert(1);
+    &.active {
+      background: url(../Images/cerrar.svg);
+      background-size: 1.563rem;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
   section {
-    padding: 20px;
+    padding: 1.25rem;
   }
   .banner {
     .content {
@@ -65,18 +67,18 @@
     }
     .col {
       .imgbx {
-        height: 300px;
-        margin-top: 20px;
+        height: 18.75rem;
+        margin-top: 1.25rem;
       }
     }
   }
   .menu {
     .content {
-      margin-top: 20px;
+      margin-top: 1.25rem;
       .box {
-        margin: 10px;
+        margin: 0.625rem;
         .imgbx {
-          height: 260px;
+          height: 16.25rem;
         }
       }
     }
@@ -87,7 +89,7 @@
   .tittletext {
     font-size: 1.8em;
     line-height: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     font-weight: 300;
   }
 }
@@ -97,7 +99,7 @@
     .content {
       h1 {
         font-size: 2.2em;
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -106,9 +108,10 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .container-card {
     flex-wrap: wrap;
+    max-width: 50%;
   }
   .card {
-    margin: 15px;
+    margin: 0.938rem;
   }
   .card-1 {
     @extend .card;
@@ -124,7 +127,7 @@
 @media (max-width: 991px) {
   header,
   header.sticky {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
   }
 }
 @media (min-width: 700px) {
@@ -139,5 +142,36 @@
   .contact-info ul,
   .contact-info p {
     text-align: left;
+  }
+}
+
+@media (max-width: 280px) {
+  header,
+  header.sticky {
+    padding: 0.625rem 1.25rem;
+    height: 4.5rem;
+    .logo {
+      font-size: 1.5em;
+    }
+  }
+  header .logo,
+  header.sticky .logo {
+    font-size: 1.4em;
+  }
+  .container-card {
+    flex-direction: column;
+    padding-right: 1.5rem;
+  }
+  .title {
+    font-size: 1.3em;
+  }
+  .galleryBanner .content h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-card {
+    max-width: 70%;
   }
 }

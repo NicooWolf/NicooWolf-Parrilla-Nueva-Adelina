@@ -17,6 +17,7 @@ body {
   background-size: cover;
 }
 
+/* BANNER */
 .banner {
   position: relative;
   width: 100%;
@@ -36,7 +37,7 @@ body {
 }
 
 .banner .content {
-  max-width: 900px;
+  max-width: 56.25rem;
   text-align: center;
 }
 
@@ -47,7 +48,8 @@ body {
 
 .banner .content p {
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 550;
+  text-shadow: 1px 1px #111;
   color: #fff;
 }
 
@@ -55,6 +57,7 @@ body {
   color: #e0c920;
 }
 
+/* BANNER BUTTON */
 .btn {
   font-size: 1em;
   color: #111;
@@ -62,26 +65,27 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#fad961), to(#f76b1c));
   background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
   display: inline-block;
-  padding: 10px 30px;
-  margin-top: 20px;
+  padding: 0.625rem 1.875rem;
+  margin-top: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .btn:hover {
-  letter-spacing: 6px;
+  letter-spacing: 0.375rem;
 }
 
+/* HEADER */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 2.5rem 6.25rem;
   z-index: 10000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +98,7 @@ header {
           align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  /* NAVIGATION MENU */
 }
 
 header .logo {
@@ -103,14 +108,14 @@ header .logo {
   text-decoration: none;
 }
 
-header .logo span {
-  color: #e0c920;
-}
-
 header .logo:hover {
-  letter-spacing: 3px;
+  letter-spacing: 0.188rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+header .logo span {
+  color: #e0c920;
 }
 
 header .navigation {
@@ -122,7 +127,7 @@ header .navigation {
 
 header .navigation li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 header .navigation li a {
@@ -138,9 +143,9 @@ header .navigation li a:hover {
 
 header.sticky {
   background: #fff;
-  padding: 10px 100px;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 0.625rem 6.25rem;
+  -webkit-box-shadow: 0 0.313rem 1.25rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.313rem 1.25rem rgba(0, 0, 0, 0.05);
 }
 
 header.sticky .navigation li a {
@@ -159,6 +164,7 @@ header.sticky .logo span {
   color: #91830d;
 }
 
+/* SECTIONS */
 section {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -193,7 +199,7 @@ section {
   font-size: 1.5em;
 }
 
-/* CARDS SOBRE NOSOTROS */
+/* CARDS ABOUT US */
 .container__card {
   max-width: 1200px;
   padding: 20px;
@@ -367,7 +373,7 @@ section {
   transition: 1s;
 }
 
-/* CARDS NUESTRAS ESPECIALIDADES */
+/* CARDS OUR SPECIALITIES */
 .container-card {
   width: 100%;
   display: -webkit-box;
@@ -509,18 +515,19 @@ section {
   margin-bottom: 5px;
 }
 
+/* CONTACT FORM */
 .contact__content {
   color: #fff;
 }
 
 .contact__logo {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .contact-wrapper {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 1.25rem;
+  padding-bottom: 3.125rem;
 }
 
 .contact-form {
@@ -549,6 +556,7 @@ section {
   grid-column: 1 / 3;
 }
 
+/* CONTACT FORM BUTTON, INPUT AND TEXTAREA */
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
@@ -568,6 +576,7 @@ section {
   transition: 1.5s;
 }
 
+/* CONTACT FORM BUTTON / HOVER AND FOCUS */
 .contact-form form button {
   background: #111;
   border: 0;
@@ -575,17 +584,20 @@ section {
   padding: 1em;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus {
+.contact-form form button:hover, .contact-form form button:focus {
   background: #ac990b;
   color: #111;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
+  -webkit-transition: background-color 1.5s ease-out;
+  transition: background-color 1.5s ease-out;
   outline: 0;
 }
 
 .contact-info {
-  background: #000;
+  background: #111;
+}
+
+.contact-info ul {
+  list-style: none;
 }
 
 .contact-info h4,
@@ -595,14 +607,11 @@ section {
   margin: 0 0 1rem 0;
 }
 
-.contact-info ul {
-  list-style: none;
-}
-
 .block button {
   font-weight: bold;
 }
 
+/* FOOTER */
 footer {
   bottom: 0;
   left: 0;
@@ -613,7 +622,7 @@ footer {
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
-  padding-top: 40px;
+  padding-top: 2.5rem;
   color: #fff;
 }
 
@@ -646,12 +655,13 @@ footer {
 }
 
 .footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
+  max-width: 31.25rem;
+  margin: 0.625rem auto;
+  line-height: 1.75rem;
+  font-size: 0.875rem;
 }
 
+/* SOCIAL ICONS */
 .socials {
   list-style: none;
   display: -webkit-box;
@@ -667,7 +677,7 @@ footer {
 }
 
 .socials li {
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .socials a {
@@ -681,7 +691,7 @@ footer {
   transition: color 0.4s ease;
 }
 
-.hola, .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-arrow-circle-up:hover {
+.transform, .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-arrow-circle-up:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-transition: 0.8s;
@@ -715,6 +725,7 @@ footer {
   -webkit-background-clip: text;
 }
 
+/* GALLERY SECTION BANNER */
 .galleryBanner {
   position: relative;
   width: 100%;
@@ -734,7 +745,7 @@ footer {
 }
 
 .galleryBanner .content {
-  max-width: 900px;
+  max-width: 56.25rem;
   text-align: center;
 }
 
@@ -748,6 +759,7 @@ footer {
   color: #fff;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 991px) {
   header .navigation {
     display: none;
@@ -762,9 +774,9 @@ footer {
   }
   header .navigation.active {
     width: 100%;
-    height: calc(100% - 68px);
+    height: calc(100% - 4rem);
     position: fixed;
-    top: 68px;
+    top: 4.2rem;
     left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -781,31 +793,31 @@ footer {
             flex-direction: column;
     background: #fff;
   }
+  header.sticky {
+    padding: 0.625rem 1.25rem;
+  }
+  header.sticky .menuToggle {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
   .menuToggle {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: url(../Images/hamburgesa.svg);
-    background-size: 30px;
+    background-size: 1.875rem;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
   }
   .menuToggle.active {
     background: url(../Images/cerrar.svg);
-    background-size: 25px;
+    background-size: 1.563rem;
     background-repeat: no-repeat;
     background-position: center;
   }
-  header.sticky {
-    padding: 10px 20px;
-  }
-  header.sticky .menuToggle {
-    -webkit-filter: invert(1);
-            filter: invert(1);
-  }
   section {
-    padding: 20px;
+    padding: 1.25rem;
   }
   .banner .content h1 {
     font-size: 5em;
@@ -822,17 +834,17 @@ footer {
     width: 100%;
   }
   .row .col .imgbx {
-    height: 300px;
-    margin-top: 20px;
+    height: 18.75rem;
+    margin-top: 1.25rem;
   }
   .menu .content {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .menu .content .box {
-    margin: 10px;
+    margin: 0.625rem;
   }
   .menu .content .box .imgbx {
-    height: 260px;
+    height: 16.25rem;
   }
   .tittle {
     text-align: center;
@@ -840,7 +852,7 @@ footer {
   .tittletext {
     font-size: 1.8em;
     line-height: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     font-weight: 300;
   }
 }
@@ -856,16 +868,17 @@ footer {
   .container-card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 50%;
   }
   .card, .card-1, .card-2, .card-3 {
-    margin: 15px;
+    margin: 0.938rem;
   }
 }
 
 @media (max-width: 991px) {
   header,
   header.sticky {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
   }
 }
 
@@ -883,5 +896,40 @@ footer {
   .contact-info ul,
   .contact-info p {
     text-align: left;
+  }
+}
+
+@media (max-width: 280px) {
+  header,
+  header.sticky {
+    padding: 0.625rem 1.25rem;
+    height: 4.5rem;
+  }
+  header .logo,
+  header.sticky .logo {
+    font-size: 1.5em;
+  }
+  header .logo,
+  header.sticky .logo {
+    font-size: 1.4em;
+  }
+  .container-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 1.5rem;
+  }
+  .title {
+    font-size: 1.3em;
+  }
+  .galleryBanner .content h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-card {
+    max-width: 70%;
   }
 }
