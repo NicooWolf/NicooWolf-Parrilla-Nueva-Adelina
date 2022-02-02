@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----------SEO------------>
+
+    <meta name="description" content="Nuestro menú cuenta con diferentes platos. Elegí con sabiduría!">
+    <meta name="theme-color" content="#3e456c">
+    <meta name="keywords"
+        content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, menú, carta, comidas">
+
+    <!--------BOOTSTRAP----------->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---------CSS----------->
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!---------ANIMATED--------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!---------ICON----------->
+
+    <link rel="icon" href="../images/icon.png">
+
+    <!---------TITLE----------->
+
+    <title>Nueva Adelina - Menú</title>
+
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html" class="logo animate__animated animate__zoomIn animate__delay-0.7s">La Nueva
+            Adelina<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <!---------NAVIGATION----------->
+
+        <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
+            <li><a href="../index.html" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="./contact.html" onclick="toggleMenu();">Contacto</a></li>
+            <li><a href="./gallery.html" onclick="toggleMenu();">Galería</a></li>
+        </ul>
+    </header>
+
+    <!---------MENU CARDS----------->
+
+    <div class="menu">
+        <div class="heading">
+            <h1>Nuestro</h1>
+            <h3>&mdash; MENU &mdash; </h3>
+        </div>
+        <div class="food-items">
+            <img src="../images/hamburgesa adelina.jpg" alt="Hamburgesa Adelina">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Hamburgesa Adelina</h5>
+                    <h6 class="price"> $900 </h6>
+                </div>
+                <p>Pan de papa, 200gr de carne, lechuga, pepinillos, salsa Adelina y bacon especial!</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/pollo a la mostaza.jpeg" alt="Pollo a la mostaza">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pollo a la mostaza</h5>
+                    <h6 class="price"> $1100 </h6>
+                </div>
+                <p>Pollo cocido durante 2 horas en salsa de mostaza agridulce.</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/fritas.jpg" alt="Porción de fritas">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Porción de fritas</h5>
+                    <h6 class="price"> $350 </h6>
+                </div>
+                <p>Pedilas medianas o grandes! Disfrutalas con una rica mayonesa o ketchup casero!</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/pato a la cacerola.jpg" alt="Pato a la cacerola">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pato a la cacerola</h5>
+                    <h6 class="price"> $1500 </h6>
+                </div>
+                <p>Acompañado de papines, cebollas y morrones, cocido con un caldo especial de verduras.</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/matambre.jpg" alt="Matambre a la pizza">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Matambre a la pizza</h5>
+                    <h6 class="price"> $1350 </h6>
+                </div>
+                <p>Nuestro caballo de troya. Hecho a las brasas.</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/parrillada completa.jpg" alt="Parrillada">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Parrillada</h5>
+                    <h6 class="price"> $1300 </h6>
+                </div>
+                <p>Trae asado, vacio, pollo, chori, morcilla, riñon y chinchu.</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/bife.jpg" alt="Bife">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Bife</h5>
+                    <h6 class="price"> $1000 </h6>
+                </div>
+                <p>Pedilo ahumado o a las brasas. Con un poco de sal y pimienta.</p>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="../images/ojo de bife.jpg" alt="Ojo de bife">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Ojo de bife</h5>
+                    <h6 class="price"> $1200 </h6>
+                </div>
+                <p>Se desarma con la mirada. Acompañado de papas, morrones y zanahorias.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------FOOTER----------->
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="logo animate__animated animate__zoomIn animate__delay-0.7s"">La Nueva Adelina<span>.</span></h3>
+        <ul class=" socials">
+                <li><a href="https://www.facebook.com/parrillalanuevaadelina" target="_blank"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/parrillalanuevaadelina/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
+                </ul>
+                <p>Copyright &copy;2022.</p>
+        </div>
+    </footer>
+
+    <!---------SCRIPTS----------->
+
+    <script src="../scripts/scripts.js"></script>
+
+</body>
+
+</html>

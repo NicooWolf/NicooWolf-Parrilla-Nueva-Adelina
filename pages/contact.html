@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----------SEO------------>
+
+    <meta name="description" content="Contactate con nosotros de una manera rapida y eficiente.">
+    <meta name="theme-color" content="#3e456c">
+    <meta name="keywords"
+        content="parrilla, restaurante, asado, carne, papas fritas, comida, buenos aires, parrillada, almuerzo, cena, contacto, formulario, mensaje, email, preguntas, dudas">
+
+    <!--------BOOTSTRAP----------->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---------CSS----------->
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!---------ANIMATED--------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!---------ICON----------->
+
+    <link rel="icon" href="../images/icon.png">
+
+    <!---------TITLE----------->
+
     <title>Nueva Adelina - Contacto</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="../index.html" class="logo animate__animated animate__zoomIn animate__delay-0.7s">La Nueva
+            Adelina<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <!---------NAVIGATION----------->
+
+        <ul class="navigation animate__animated animate__zoomIn animate__delay-0.7s">
+            <li><a href="../index.html" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="./gallery.html" onclick="toggleMenu();">Galería</a></li>
+            <li><a href="./menu.html" onclick="toggleMenu();">Menú</a>
+            </li>
+        </ul>
+    </header>
+
+    <!---------CONTACT FORM----------->
+
+    <div class="contact__content" id="contact">
+        <h1 class="contact__logo">Contactanos!</h1>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="Nombre Completo">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número telefonico</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas información</h4>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Av de Mayo 1158</li>
+                    <li><i class="fa fa-phone"></i> +54 011-3290-7617</li>
+                    <li><i class="fa fa-envelope"></i> lanuevaadelina@hotmail.com</li>
+                </ul>
+                <p>Ante cualquier duda / inconveniente, no lo pienses dos veces y contactanos!</p>
+                <p>Lanuevaadelina.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------FOOTER----------->
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="logo animate__animated animate__zoomIn animate__delay-0.7s"">La Nueva Adelina<span>.</span></h3>
+            <ul class=" socials">
+                <li><a href="https://www.facebook.com/parrillalanuevaadelina" target="_blank"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/parrillalanuevaadelina/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
+                </ul>
+                <p>Copyright &copy;2022.</p>
+        </div>
+    </footer>
+
+    <!---------SCRIPTS----------->
+
+    <script src="../scripts/scripts.js"></script>
+
 </body>
+
 </html>
